@@ -3,7 +3,7 @@ import "../css/Home.css";
 import resultSet from "../data/data.json";
 import React, { useState } from "react";
 import MyNav from "./NavBar";
-import Location from "./Location";
+import UserLocationMap from "./Location";
 
 const Home = () => {
     const [state, setState] = useState(resultSet);
@@ -28,7 +28,8 @@ const Home = () => {
 
     return (
         <>
-            <div className="container-fluid bg bg-content">
+            <div className="container-fluid bg bg-content" style={{padding: '0%'}}>
+
                 <div>
                     <MyNav />
                 </div>
@@ -43,13 +44,14 @@ const Home = () => {
                             </button>
                         
                     </div>
-                    <div>
-                        <Location />
+                    <div align='center'>
+                        Your Location
+                        <UserLocationMap />
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-lg-6 mt-5 p-5">
-                        <p>
+                        <p id="intro">
                             Our ambulance service is committed to providing fast and safe
                             emergency medical support in any situation. With a team of
                             professional drivers and modern vehicles equipped with advanced
@@ -62,7 +64,7 @@ const Home = () => {
                         </p>
                     </div>
                      <div className="col-lg-6 mt-5">
-                        <table className="table table-hover table-striped">
+                        <table className="table table-hover table-striped" style={{textAlign:"center"}}>
                             <thead className="table-dark">
                                 <tr>
                                     <th>Type</th>

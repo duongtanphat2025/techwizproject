@@ -1,7 +1,4 @@
-.header-logo{
-    width: 50px;
-    
-}
+
 table{
     width: 100%;
 }
@@ -13,11 +10,8 @@ table td{
 }
 .table-header{
     width: 100%;
-    /* overflow: auto; */
-}
-.table-header td {
+    height: 150px;
     background-color: #f5e7fd;
-    /* #00796B */
 }
 
 .table-header .header-desktop {
@@ -66,10 +60,10 @@ table td{
 /* reponsive */
 .header-mobile{
     display: none;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-@media (max-width: 870px) {
+@media (max-width: 1000px) {
     .header-desktop {
         display: none;
     }

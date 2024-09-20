@@ -24,15 +24,11 @@ const Gallery = () => {
                 <MyNav />
             </div>
             <div className="bg" align="center">
-                <br />
-                <h2 align='center' style={{ fontSize: "80px" }}>Carousel</h2>
                 <div >
                     <Slide />
                 </div>
-            </div>
-            <div className="backgroundstyle">
                 <h1 align='center'>Our Services</h1>
-                <table id="picture">
+                <table id="picture" style={{ textAlign: 'center' }}>
                     <tr>
                         <td><img src={h1} className="imgvan" /></td>
                         <td><img src={h2} className="imgvan" /></td>

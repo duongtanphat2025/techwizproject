@@ -30,7 +30,9 @@ table {
 
 .bg {
     background-image: url(../img/bg1.png);
-    background-size: cover;
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
     background-color: rgb(185, 255, 254);
 }
 
@@ -38,13 +40,8 @@ table {
     text-align: center;
 }
 
-.style {
-    color: rgb(194, 147, 19);
-}
-
 #intro {
-    color: rgb(29, 26, 253);
-    font-size: 20pt;
+    text-align: justify;
 }
 
 /* don't change anyhere, pls 

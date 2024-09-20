@@ -14,9 +14,10 @@ const MyNav = () => {
                 <tr>
                     <td className='header-logo' align='center'>
                         <Link to='/'>
-                            <img src={logo} />
+                            <img src={logo} style={{width: '150px', height: '150px'}}/>
                         </Link>
                     </td>
+
                     <td className='header-desktop'>
                         
                         <td className='header-link'>

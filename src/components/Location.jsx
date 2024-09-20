@@ -1,72 +1,62 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
 
-const Location = () => {
-  const [location, setLocation] = useState({
-    latitude: null,
-    longitude: null,
-    error: null,
-    loading: true,
-  });
+// Set custom icon for the marker (if needed)
+const userIcon = new L.Icon({
+  iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+});
 
+const UserLocationMap = () => {
+  const [position, setPosition] = useState(null);
+
+  // Use Geolocation API to get user's location
   useEffect(() => {
-    if (!navigator.geolocation) {
-      setLocation((prevState) => ({
-        ...prevState,
-        error: "Geolocation is not supported by your browser",
-        loading: false, // Ngừng loading khi phát hiện lỗi
-      }));
-    } else {
+    if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
-        (position) => {
-          setLocation({
-            latitude: position.coords.latitude,
-            longitude: position.coords.longitude,
-            error: null,
-            loading: false, // Ngừng loading khi có vị trí
-          });
+        (pos) => {
+          const { latitude, longitude } = pos.coords;
+          setPosition([latitude, longitude]);
         },
-        (error) => {
-          let errorMessage = '';
-          switch(error.code) {
-            case error.PERMISSION_DENIED:
-              errorMessage = 'User denied the request for Geolocation.';
-              break;
-            case error.POSITION_UNAVAILABLE:
-              errorMessage = 'Location information is unavailable.';
-              break;
-            case error.TIMEOUT:
-              errorMessage = 'The request to get user location timed out.';
-              break;
-            default:
-              errorMessage = 'An unknown error occurred.';
-              break;
-          }
-          setLocation((prevState) => ({
-            ...prevState,
-            error: errorMessage,
-            loading: false, // Ngừng loading khi phát hiện lỗi
-          }));
+        (err) => {
+          console.error("Error getting location:", err);
+        },
+        {
+          enableHighAccuracy: true, // Bật độ chính xác cao
+          timeout: 5000,            // Giới hạn thời gian chờ (5 giây)
+          maximumAge: 0             // Không dùng cache cũ
         }
       );
+    } else {
+      alert("Your browser does not support Geolocation!");
     }
   }, []);
+  
 
   return (
-    <div className='thongbao'>
-      Your Location
-      {location.loading ? (
-        <p>Loading...</p> // Hiển thị khi đang lấy vị trí
-      ) : location.error ? (
-        <p>Error: {location.error}</p>
+    <div>
+      {position ? (
+        <MapContainer center={position} zoom={13} style={{ height: '380px', width: '100%' }}>
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          />
+          <Marker position={position} icon={userIcon}>
+            <Popup>
+            
+            </Popup>
+          </Marker>
+        </MapContainer>
       ) : (
-        <div >
-
-          In HO CHI MINH CITY
-          <br /><br />
-        </div>
+        <p>Loading...</p>
       )}
     </div>
   );
 };
 
-export default Location;
+export default UserLocationMap;

@@ -80,3 +80,6 @@
     width: 33%; /* Ensure each cell takes up 1/3 of the row */
     padding: 10px; /* Adds space around the images */
 }
+.anhphat{
+    height: 600px;
+}
