@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/techwizproject/static/css/main.31a66d76.css",
-    "main.js": "/techwizproject/static/js/main.014760ff.js",
+    "main.css": "/techwizproject/static/css/main.54e87bac.css",
+    "main.js": "/techwizproject/static/js/main.3d600ccf.js",
     "static/media/nonac2.png": "/techwizproject/static/media/nonac2.61e4e9113bfbfc92961d.png",
     "static/media/2.png": "/techwizproject/static/media/2.133172dd14db9344f382.png",
     "static/media/ac1.png": "/techwizproject/static/media/ac1.133172dd14db9344f382.png",
@@ -24,11 +24,11 @@
     "static/media/logo.png": "/techwizproject/static/media/logo.e5949ef0596c2bca22ea.png",
     "static/media/maunen.png": "/techwizproject/static/media/maunen.79fee1633665ca98a344.png",
     "index.html": "/techwizproject/index.html",
-    "main.31a66d76.css.map": "/techwizproject/static/css/main.31a66d76.css.map",
-    "main.014760ff.js.map": "/techwizproject/static/js/main.014760ff.js.map"
+    "main.54e87bac.css.map": "/techwizproject/static/css/main.54e87bac.css.map",
+    "main.3d600ccf.js.map": "/techwizproject/static/js/main.3d600ccf.js.map"
   },
   "entrypoints": [
-    "static/css/main.31a66d76.css",
-    "static/js/main.014760ff.js"
+    "static/css/main.54e87bac.css",
+    "static/js/main.3d600ccf.js"
   ]
 }
