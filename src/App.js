@@ -14,7 +14,6 @@ const App = () => {
           <Route path="/gallery" element={<Gallery/>}/>
           <Route path="/feedback" element={<Feedback/>}/>
           <Route path="/search" element={<Search/>}/>
-          <Route path="*" element={<Home/>}/>
         </Routes>
       </BrowserRouter>
     </>

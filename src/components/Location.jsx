@@ -53,7 +53,7 @@ const Location = () => {
 
   return (
     <div className='thongbao'>
-      <h3>Your Location</h3>
+      Your Location
       {location.loading ? (
         <p>Loading...</p> // Hiển thị khi đang lấy vị trí
       ) : location.error ? (
@@ -62,7 +62,7 @@ const Location = () => {
         <div >
           <p>Latitude: {location.latitude}</p>
           <p>Longitude: {location.longitude}</p>
-          <h4 style={{color:'Black'}}>In HO CHI MINH CITY</h4>
+          In HO CHI MINH CITY
           <br /><br />
         </div>
       )}

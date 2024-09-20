@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import React from 'react'
 import '../css/Footer.css'
 import LGSC from '../img/LGSC.png'
+import logo2 from '../hinh/images.png'
 const Footer = () => {
     // Hàm xác nhận cuộc gọi
     const confirmCall = (phoneNumber) => {
@@ -13,10 +14,13 @@ const Footer = () => {
     }
     return (
         <footer className="footer" >
-            <div className="footer-container" >              
-                    <div className="footer-logo">                       
-                            <img src={LGSC} />                        
-                    </div>                                  
+            <div className="footer-container" >
+                <div className="footer-logo">
+                    <img src={LGSC} />
+                </div>
+                <div className="footer-logo2">
+                    <img src={logo2} alt="" style={{paddingTop:"15%"}}/>
+                </div>
                 <div className="footer-about">
                     <h2>About Us</h2>
                     <p>
@@ -30,7 +34,7 @@ const Footer = () => {
                     <h2>Contact Us</h2>
                     <p>
                         Address:
-                        <a target='_blank' style={{ color: 'white', fontSize: '15px', backgroundColor: '#333333', textDecoration: 'none' }} href="https://maps.app.goo.gl/Q92fqDgkNctnpAJg8"> 391a Nam Ky Khoi Nghia Street,
+                        <a target='_blank' style={{ color: 'white', fontSize: '15px', textDecoration: 'none' }} href="https://maps.app.goo.gl/Q92fqDgkNctnpAJg8"> 391a Nam Ky Khoi Nghia Street,
                             Vo Thi Sau, District 3, Ho Chi Minh city, VIETNAM</a>
                     </p>
                     <p>
@@ -39,13 +43,13 @@ const Footer = () => {
                     <p>
                         Email: <a href="mailto:tuvan@aptechsaigon.edu.vn">tuvan@aptechsaigon.edu.vn</a>
                     </p>
-                </div>
+                </div>        
             </div>
-
-            <hr />
+         
             <div className="footer-copyright">
                 &copy; 2024 LifeLink. All rights reserved by SIGMA.
             </div>
+
         </footer>
     );
 }

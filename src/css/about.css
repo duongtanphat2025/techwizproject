@@ -3,18 +3,26 @@
     flex: 1;
 }
 
-
-caption {
-    display: block;
+.blockabout {
+    display: flex;
+    flex-wrap: wrap; /* Để các khối div tự động xuống hàng nếu màn hình nhỏ */
+    justify-content: space-between; /* Giãn đều các khối div */
+    align-items: flex-start; /* Canh chỉnh các khối div từ phía trên */
+    gap: 20px; /* Khoảng cách giữa các khối div */
+}
+.blockabout div {
+    flex: 1; /* Cho các khối div chiếm khoảng không gian bằng nhau */
+    margin: 10px;
+    min-width: 250px; /* Đặt kích thước tối thiểu để không bị quá nhỏ */
 }
 
 .aboutus {
-    font-size: 10pt;
+    font-size: 1rem;
     color: rgb(24, 8, 251);
 }
 
 li {
-    font-size: 10pt;
+    font-size: 1rem;
     color: rgb(24, 8, 251);
 }
 
@@ -26,9 +34,10 @@ h1 {
 }
 
 .member {
-    font-size: 15pt;
+    font-size: 2rem;
     color: chocolate;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
 
 iframe,

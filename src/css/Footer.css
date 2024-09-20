@@ -1,5 +1,5 @@
 .footer {
-    background-color: #333;
+    background-color: rgb(61 , 133, 120);
     color: white;
     padding-top: 40px;
 }
@@ -10,10 +10,15 @@
     align-items: flex-start;
     flex-wrap: wrap;
     padding: 0 20px;
+    border-bottom: 1px solid #d6d6d6;
 }
 
 .footer-logo img {
     width: 170px;
+}
+.footer-logo2 img {
+    width: 170px;
+    height: 120px;
 }
 
 .footer-about, .footer-contact {
@@ -44,15 +49,10 @@
     text-decoration: underline;
 }
 
-hr {
-    margin: 20px 0;
-    border: 1px solid #555;
-}
-
 .footer-copyright {
     text-align: center;
     font-size: 14px;
-    padding-bottom: 20px;
+    padding: 1%;
     background-color: #333;
 }
 
