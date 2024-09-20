@@ -6,21 +6,26 @@ import "../css/Search.css";
 import Footer from "./footer";
 import Dropdown from "react-bootstrap/Dropdown";
 
-import h1 from "../hinh/img1.png";
+import myIcon from "../hinh/icon.png";
+
+import HospitalTable from "./Select";
+
+import h1 from "../hinh/img222.jpg";
 import h2 from "../hinh/img2.png";
 import h3 from "../hinh/img3.png";
 import h4 from "../hinh/img4.png";
-import h5 from "../hinh/img5.png";
-import h6 from "../hinh/img6.png";
-import h7 from "../hinh/img7.png";
+import h5 from "../hinh/img555.png";
+import h6 from "../hinh/img444.png";
+import h7 from "../hinh/img77.png";
 import h8 from "../hinh/img8.png";
 import h9 from "../hinh/img9.png";
-import h10 from "../hinh/img10.png";
+import h10 from "../hinh/img333.png";
 
 const Search = ({ data = Ambulance }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [mainSortBy, setMainSortBy] = useState("type");
   const [secondarySortBy, setSecondarySort] = useState("asc");
+  const [showHospitalData, setShowHospitalData] = useState(false);
   const handleImageZoom = (event, imgSrc) => {
     const zoomImage = document.getElementById("zoom-image");
     zoomImage.style.display = "block";
@@ -56,7 +61,8 @@ const Search = ({ data = Ambulance }) => {
       service.type.toLowerCase().includes(searchTextLower) ||
       service.price.toString().includes(searchTextLower) ||
       service.distance.toLowerCase().includes(searchTextLower) ||
-      service.location.toLowerCase().includes(searchTextLower)
+      service.location.toLowerCase().includes(searchTextLower) ||
+      service.size.toLowerCase().includes(searchTextLower)
     );
   });
 
@@ -69,6 +75,7 @@ const Search = ({ data = Ambulance }) => {
       location: "1",
       distance: "9",
       alt: "ICU Service",
+      size: "large",
     },
     {
       src: h2,
@@ -78,6 +85,7 @@ const Search = ({ data = Ambulance }) => {
       location: "2",
       distance: "4",
       alt: "ICU Service",
+      size: "large",
     },
     {
       src: h3,
@@ -87,6 +95,7 @@ const Search = ({ data = Ambulance }) => {
       location: "1",
       distance: "2",
       alt: "ICCU Service",
+      size: "Medium",
     },
     {
       src: h4,
@@ -96,6 +105,7 @@ const Search = ({ data = Ambulance }) => {
       location: "4",
       distance: "9",
       alt: "ICCU Service",
+      size: "Medium",
     },
     {
       src: h5,
@@ -105,6 +115,7 @@ const Search = ({ data = Ambulance }) => {
       location: "5",
       distance: "3",
       alt: "A/C Service",
+      size: "Medium",
     },
     {
       src: h6,
@@ -114,6 +125,7 @@ const Search = ({ data = Ambulance }) => {
       location: "3",
       distance: "8",
       alt: "A/C Service",
+      size: "Medium",
     },
     {
       src: h7,
@@ -123,6 +135,7 @@ const Search = ({ data = Ambulance }) => {
       location: "3",
       distance: "4",
       alt: "Normal Service",
+      size: "Large",
     },
     {
       src: h8,
@@ -132,6 +145,7 @@ const Search = ({ data = Ambulance }) => {
       location: "4",
       distance: "7",
       alt: "Normal Service",
+      size: "Large",
     },
     {
       src: h9,
@@ -141,6 +155,7 @@ const Search = ({ data = Ambulance }) => {
       location: "3",
       distance: "5",
       alt: "Non A/C Service",
+      size: "Large",
     },
     {
       src: h10,
@@ -150,6 +165,7 @@ const Search = ({ data = Ambulance }) => {
       location: "5",
       distance: "6",
       alt: "Non A/C Service",
+      size: "Large",
     },
   ];
 
@@ -162,6 +178,8 @@ const Search = ({ data = Ambulance }) => {
         ? a.price - b.price
         : mainSortBy === "location"
         ? a.location.localeCompare(b.location)
+        : mainSortBy === "size"
+        ? a.size.localeCompare(b.size)
         : mainSortBy === "distance"
         ? a.distance.localeCompare(b.distance)
         : 0;
@@ -188,7 +206,7 @@ const Search = ({ data = Ambulance }) => {
           <div align="center" className="style">
             <h1 className="title"> Ambulance Type </h1>
           </div>
-          <div>
+          <div style={{ marginLeft: "45px" }} align="left">
             <input
               type="text"
               value={searchTerm}
@@ -197,8 +215,17 @@ const Search = ({ data = Ambulance }) => {
               className="search"
             />
           </div>
+          <br />
         </div>
-        <div className="option">
+        <div
+          className="option"
+          style={{
+            marginLeft: "45px",
+            width: "fit-content",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
           <Dropdown>
             <Dropdown.Toggle variant="primary" id="sortDropdown">
               Sort by {mainSortBy} <span className="caret"></span>
@@ -215,12 +242,25 @@ const Search = ({ data = Ambulance }) => {
                 Sort by Location
               </Dropdown.Item>
 
+              <Dropdown.Item onClick={() => handleSortChange("size")}>
+                Sort by Size
+              </Dropdown.Item>
+
               <Dropdown.Item onClick={() => handleSortChange("distance")}>
                 Sort by Distance
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
+          <button
+            className="btn btn-warning"
+            style={{ marginLeft: "10px" }}
+            onClick={() => alert("You Have Booked The Ambulance")}
+            type="button"
+          >
+            Click To Book
+          </button>
         </div>
+        <br />
         <div>
           <div className="listView">
             <table className="table-list">
@@ -228,13 +268,16 @@ const Search = ({ data = Ambulance }) => {
                 <th>Type</th>
                 <th>Price</th>
                 <th>Location</th>
+                <th>Size</th>
                 <th>Images</th>
+                <th>Call</th>
               </tr>
               {sortedData.map((service, index) => (
                 <tr key={index}>
                   <td>{service.type}</td>
                   <td>{`${service.price}$`}</td>
                   <td>District {service.location}</td>
+                  <td>{service.size}</td>
                   <td key={index}>
                     {imagesData
                       .filter((image) => image.id === service.id)
@@ -246,16 +289,28 @@ const Search = ({ data = Ambulance }) => {
                             src={image.src}
                             alt={image.alt}
                             onMouseEnter={(e) => handleImageZoom(e, image.src)}
-                            onMouseLeave={handleImageUnzoom}                           
+                            onMouseLeave={handleImageUnzoom}
                           />
-
-                          <div id="zoom-lens" style={{ display: "none" }}></div>
                         </>
                       ))}
                   </td>
+
+                  <td style={{ width: "300px" }}>
+                    <button
+                      onClick={() => setShowHospitalData(true)}
+                      className="btn btn-call"
+                    >
+                      <img className="btn-call" src={myIcon} alt="Call Icon" />
+                    </button>
+                  </td>
+
+                  <div id="zoom-lens" style={{ display: "none" }}></div>
                 </tr>
               ))}
             </table>
+            <div style={{ display: showHospitalData ? "table-cell" : "none" }}>
+              <HospitalTable />
+            </div>
             <div className="zoom-box">
               {/* Zoom image element (hidden initially)*/}
               <img

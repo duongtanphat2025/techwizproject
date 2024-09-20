@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import MyNav from "./NavBar";
 import UserLocationMap from "./Location";
 import { Link } from 'react-router-dom';
-
+import Ambulance from "../data/data.json";
 const Home = () => {
     const [state, setState] = useState(resultSet);
     const handleICUCall = () => {
@@ -27,6 +27,28 @@ const Home = () => {
         }
     };
 
+
+    // search
+    const [inputValue, setInputValue] = useState("");
+    const [list, setList] = useState([]);
+    const [showList, setShowList] = useState(false);
+
+
+    const handleInputChange = (event) => {
+        const value = event.target.value;
+        setInputValue(value);
+
+        if (value) {
+            const filteredList = Ambulance.filter((list) =>
+                list.type.toLowerCase().includes(value.toLowerCase())
+            );
+            setList(filteredList);
+            setShowList(true);
+        } else {
+            setShowList(false);
+        }
+    };
+
     return (
         <>
             <div className="container-fluid bg bg-content" style={{ padding: '0%' }}>
@@ -35,8 +57,32 @@ const Home = () => {
                 </div>
                 <div className="inline">
                     <div>
-                        <h1 className="text-center title">Life Link</h1>
+                        <div>
+                            <h1 className="text-center title-home">Life Link</h1>
+                        </div>
+                        <div style={{ textAlign: 'center' }} className="input-container">
+                            <input 
+                                onChange={handleInputChange}
+                                type="text"
+                                className='home-search'
+                                placeholder='search your Ambulance Type' 
+                            />
+                            {showList && (
+                                <table className="home-input-list">
+                                    {list.slice(0,4).map((list, index) => (
+                                        <Link className="home-input-list-link" to='/search' style={{ textDecoration: 'none', fontSize: '12px', color: 'black' }}>
+                                            <tr key={index} >
+                                                <td>{list.type}</td>
+                                                <td>{list.price}$</td>
+                                                <td>District {list.location}</td>
+                                            </tr>
+                                        </Link>
+                                    ))}
+                                </table>
+                            )}
+                        </div>
                     </div>
+                        
                     <div className="buttoncall text-center">
 
                         <button onClick={handleICUCall} style={{ background: "none", border: "none" }}>
@@ -65,11 +111,11 @@ const Home = () => {
                         <div className="sitemap">
                             <h2>SITE MAP</h2>
                             <ul>
-                                <li><Link to='/' className='nav-link' >Home</Link></li>
-                                <li><Link to='/search' className='nav-link' >Ambulance Type</Link></li>
-                                <li><Link to='/gallery' className='nav-link' >Gallery</Link></li>
-                                <li><Link to='/about' className='nav-link' >About Us</Link></li>
-                                <li><Link to='/feedback' className='nav-link' >Feedback</Link></li>
+                                <li><button><Link to='/' className='nav-link' >Home</Link></button></li>
+                                <li><button><Link to='/search' className='nav-link' >Ambulance Type</Link></button></li>
+                                <li><button><Link to='/gallery' className='nav-link' >Gallery</Link></button></li>
+                                <li><button><Link to='/about' className='nav-link' >About Us</Link></button></li>
+                                <li><button><Link to='/feedback' className='nav-link' >Feedback</Link></button></li>
                             </ul>
                         </div>
                     </div>

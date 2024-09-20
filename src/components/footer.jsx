@@ -35,7 +35,7 @@ const Footer = () => {
                     <h2>Contact Us</h2>
                     <p>
                         Address:
-                        <a target='_blank' style={{ color: 'white', fontSize: '15px', textDecoration: 'none' }} href="https://maps.app.goo.gl/Q92fqDgkNctnpAJg8"> 391a Nam Ky Khoi Nghia Street,
+                        <a target='_blank' style={{ fontSize: '15px', textDecoration: 'none' }} href="https://maps.app.goo.gl/Q92fqDgkNctnpAJg8"> 391a Nam Ky Khoi Nghia Street, <br/>
                             Vo Thi Sau, District 3, Ho Chi Minh city, VIETNAM</a>
                     </p>
                     <p>

@@ -8,6 +8,8 @@
     background-color: #F3F3F3;
     border-radius: 10px;
     transition: all 0.5s;
+    display: inline-block;
+   
   }
   .search:hover,
   .search:focus {
@@ -15,4 +17,19 @@
     box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
     background-color: white;
   }
-  
+  .title-type{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 3%;
+}
+.option {
+  display: inline-block;
+  margin-left: 10%;
+}
+input {
+  border-radius: 30px;
+}
+.type-input-search{
+  text-align: center;
+  margin-bottom: 30px;
+}

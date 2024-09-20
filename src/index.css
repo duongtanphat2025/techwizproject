@@ -92,3 +92,12 @@
     justify-items: stretch;
     object-fit: contain;
   }
+  .btn-call {
+    width: 30px;
+    height: 30px;
+    align-self: center;
+  }
+  .hos-img {
+    width: 700px;
+    height: 700px;
+  }

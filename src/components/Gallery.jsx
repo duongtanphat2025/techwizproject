@@ -17,9 +17,15 @@ import h12 from '../img1/xethuong12.png';
 import h13 from '../img1/xethuong13.png';
 import h14 from '../img1/xethuong14.png';
 import h15 from '../img1/xethuong15.png';
+import h16 from '../img1/xethuong16.png';
+import h17 from '../img1/xethuong17.png';
+import h18 from '../img1/xethuong18.png';
+import h19 from '../img1/xethuong19.png';
+import h20 from '../img1/xethuong20.png';
+import h21 from '../img1/xethuong21.png';
 import MyNav from "./NavBar";
 import '../css/Gallery.css';
-import newsearch from '../img1/newsearch.jpg'
+import newsearch from '../img1/newsearch.png'
 const Gallery = () => {
     return (
         <>
@@ -61,6 +67,18 @@ const Gallery = () => {
                         <div className="col-md-4 mt-2 p-2" align='center'><img src={h13} className="imgvan" /></div>
                         <div className="col-md-4 mt-2 p-2" align='center'><img src={h14} className="imgvan" /></div>
                         <div className="col-md-4 mt-2 p-2" align='center'><img src={h15} className="imgvan" /></div>
+                    </div>
+                    <div className="row">
+                    <h2>Model Medium Size</h2>
+                        <div className="col-md-4 mt-2 p-2" align='center'><img src={h16} className="imgvan" /></div>
+                        <div className="col-md-4 mt-2 p-2" align='center'><img src={h17} className="imgvan" /></div>
+                        <div className="col-md-4 mt-2 p-2" align='center'><img src={h18} className="imgvan" /></div>
+                    </div>
+                    <div className="row">
+                    <h2>Model Large Size</h2>
+                        <div className="col-md-4 mt-2 p-2" align='center'><img src={h19} className="imgvan" /></div>
+                        <div className="col-md-4 mt-2 p-2" align='center'><img src={h20} className="imgvan" /></div>
+                        <div className="col-md-4 mt-2 p-2" align='center'><img src={h21} className="imgvan" /></div>
                     </div>
                 </div>
             </div>
