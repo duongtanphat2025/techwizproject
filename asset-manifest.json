@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/techwizproject/static/css/main.99d3e26f.css",
-    "main.js": "/techwizproject/static/js/main.2f724369.js",
+    "main.css": "/techwizproject/static/css/main.c5938b86.css",
+    "main.js": "/techwizproject/static/js/main.724f2a83.js",
     "static/media/nonac2.png": "/techwizproject/static/media/nonac2.61e4e9113bfbfc92961d.png",
     "static/media/ac1.png": "/techwizproject/static/media/ac1.133172dd14db9344f382.png",
     "static/media/nomal2.png": "/techwizproject/static/media/nomal2.85a442545487fbc2872b.png",
@@ -14,10 +14,16 @@
     "static/media/nonac.png": "/techwizproject/static/media/nonac.10386f6d6dc1328648ce.png",
     "static/media/teamSigma.png": "/techwizproject/static/media/teamSigma.425677df2a705f9ce1ec.png",
     "static/media/icu1.png": "/techwizproject/static/media/icu1.d178e7f919f77b094fcd.png",
+    "static/media/img5.png": "/techwizproject/static/media/img5.d178e7f919f77b094fcd.png",
+    "static/media/img3.png": "/techwizproject/static/media/img3.c2a9a40db8421c6e8f70.png",
     "static/media/img4.png": "/techwizproject/static/media/img4.1bfd39d8a1e058050efc.png",
+    "static/media/img2.png": "/techwizproject/static/media/img2.0f5b2b339bb79f436139.png",
     "static/media/img7.png": "/techwizproject/static/media/img7.6b39aca3ee428033434e.png",
+    "static/media/img8.png": "/techwizproject/static/media/img8.d3f08fd87dbed8880510.png",
+    "static/media/img10.png": "/techwizproject/static/media/img10.c271df414c9c1d98c48e.png",
     "static/media/img9.png": "/techwizproject/static/media/img9.c951c0c002703dd25bb1.png",
     "static/media/bg1.png": "/techwizproject/static/media/bg1.ebb2465025e856a2e259.png",
+    "static/media/img1.png": "/techwizproject/static/media/img1.63368d3c8ddd24926a0d.png",
     "static/media/img6.png": "/techwizproject/static/media/img6.95da4645f5c100dd62bb.png",
     "static/media/icu2.png": "/techwizproject/static/media/icu2.8ce3126c16a4c9d1839f.png",
     "static/media/LGSC.png": "/techwizproject/static/media/LGSC.accc5dfa76f83305e1b3.png",
@@ -27,11 +33,11 @@
     "static/media/1.1_preview_rev_1.png": "/techwizproject/static/media/1.1_preview_rev_1.20444b85fffc07da3c73.png",
     "index.html": "/techwizproject/index.html",
     "static/media/icon.svg": "/techwizproject/static/media/icon.317bc50c92894bf177b7fef280dcd505.svg",
-    "main.99d3e26f.css.map": "/techwizproject/static/css/main.99d3e26f.css.map",
-    "main.2f724369.js.map": "/techwizproject/static/js/main.2f724369.js.map"
+    "main.c5938b86.css.map": "/techwizproject/static/css/main.c5938b86.css.map",
+    "main.724f2a83.js.map": "/techwizproject/static/js/main.724f2a83.js.map"
   },
   "entrypoints": [
-    "static/css/main.99d3e26f.css",
-    "static/js/main.2f724369.js"
+    "static/css/main.c5938b86.css",
+    "static/js/main.724f2a83.js"
   ]
 }
