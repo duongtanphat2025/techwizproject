@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/techwizproject/static/css/main.bd201f95.css",
-    "main.js": "/techwizproject/static/js/main.7208bbed.js",
+    "main.js": "/techwizproject/static/js/main.825ca543.js",
     "static/media/nonac2.png": "/techwizproject/static/media/nonac2.61e4e9113bfbfc92961d.png",
     "static/media/ac1.png": "/techwizproject/static/media/ac1.133172dd14db9344f382.png",
     "static/media/nomal2.png": "/techwizproject/static/media/nomal2.85a442545487fbc2872b.png",
@@ -28,10 +28,10 @@
     "index.html": "/techwizproject/index.html",
     "static/media/icon.svg": "/techwizproject/static/media/icon.317bc50c92894bf177b7fef280dcd505.svg",
     "main.bd201f95.css.map": "/techwizproject/static/css/main.bd201f95.css.map",
-    "main.7208bbed.js.map": "/techwizproject/static/js/main.7208bbed.js.map"
+    "main.825ca543.js.map": "/techwizproject/static/js/main.825ca543.js.map"
   },
   "entrypoints": [
     "static/css/main.bd201f95.css",
-    "static/js/main.7208bbed.js"
+    "static/js/main.825ca543.js"
   ]
 }
