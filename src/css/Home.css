@@ -1,6 +1,19 @@
 table {
     width: 100%;
 }
+
+.inline {
+    display: flex;
+    flex-wrap: wrap; /* Để các khối div tự động xuống hàng nếu màn hình nhỏ */
+    justify-content: space-between; /* Giãn đều các khối div */
+    align-items: flex-start; /* Canh chỉnh các khối div từ phía trên */
+    gap: 20px; /* Khoảng cách giữa các khối div */
+}
+
+.inline div {
+    flex: 1; /* Cho các khối div chiếm khoảng không gian bằng nhau */
+    margin: 10px;
+}
 .title{
     text-align: left;
 }
@@ -53,7 +66,10 @@ input {
     margin-bottom: 40px;
 }
 /* Small screens (mobile phones) */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+    .inline{
+        align-items: center;
+    }
     #danger {
         font-size: 30pt;
     }

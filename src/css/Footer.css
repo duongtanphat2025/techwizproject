@@ -18,7 +18,6 @@
 }
 .footer-logo2 img {
     width: 170px;
-    height: 120px;
 }
 
 .footer-about, .footer-contact {
@@ -98,6 +97,9 @@
     .footer-logo img {
         width: 100px; /* Further reduced logo size */
     }
+    .footer-logo2 img {
+        width: 100px; /* Further reduced logo size */
+    }
 
     .footer-container {
         flex-direction: column;
@@ -119,6 +121,9 @@
     }
 
     .footer-logo img {
+        width: 80px; /* Smaller logo */
+    }
+    .footer-logo2 img {
         width: 80px; /* Smaller logo */
     }
 }

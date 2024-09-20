@@ -60,8 +60,7 @@ const Location = () => {
         <p>Error: {location.error}</p>
       ) : (
         <div >
-          <p>Latitude: {location.latitude}</p>
-          <p>Longitude: {location.longitude}</p>
+
           In HO CHI MINH CITY
           <br /><br />
         </div>

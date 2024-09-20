@@ -32,29 +32,21 @@ const Home = () => {
                 <div>
                     <MyNav />
                 </div>
-
-                <table>
-                    <tr>
-                        <td>
-                            <div>
-                                <h1 className="title">Life Link</h1>
-                            </div>
-                        </td>
-                        <td className="ec">
-                            <div className="inline">
-                                <div className="buttoncall">
-                                <div className="buttoncall">
-                                    <button onClick={handleICUCall} style={{background:"none",border:"none"}}> <div id="danger"></div></button>
-                                </div>
-                                </div>
-                                <div className="location">
-                                    <Location />
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-
+                <div className="inline">
+                    <div>
+                        <h1 className="text-center title">Life Link</h1>
+                    </div>
+                    <div className="buttoncall text-center">
+                        
+                            <button onClick={handleICUCall} style={{ background: "none", border: "none" }}> 
+                                <div id="danger"></div>
+                            </button>
+                        
+                    </div>
+                    <div>
+                        <Location />
+                    </div>
+                </div>
                 <div className="row">
                     <div className="col-lg-6 mt-5 p-5">
                         <p>
@@ -69,8 +61,7 @@ const Home = () => {
                             transport solutions.
                         </p>
                     </div>
-
-                    <div className="col-lg-6 mt-5">
+                     <div className="col-lg-6 mt-5">
                         <table className="table table-hover table-striped">
                             <thead className="table-dark">
                                 <tr>
@@ -92,11 +83,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
-
-
-
-            <div>
+             <div>
                 <Footer />
             </div>
         </>
