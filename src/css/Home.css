@@ -2,16 +2,19 @@ table {
     width: 100%;
 }
 
-td {
+/* td {
     text-align: center;
-}
+} */
 
 #danger {
-    font-size: 60pt;
+    font-size: 2rem;
     font-weight: bold;
-    background-color: red;
+    background-color: blue;
     border-radius: 20px;
-    color: rgb(34, 252, 1);
+    color: white;
+    border-color: green;
+    padding: 10px 30px;
+    box-shadow: 3px 3px 3px gray;
 }
 
 #danger:hover {
@@ -54,6 +57,8 @@ caption {
     font-size: 100px;
 }
 
+
+/*
 .table-list-header th {
     font-size: 42px;
     background-color: rgba(125, 125, 125, 1);
@@ -81,6 +86,7 @@ caption {
     background-color: rgba(255, 255, 255, 0.7);
 
 }
+*/
 
 input {
     width: 50%;
