@@ -34,7 +34,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="bg bg-content">
+      <div className="container-fluid bg bg-content">
         <div>
           <MyNav />
         </div>
