@@ -5,9 +5,7 @@ table{
 table td{
     width: 16%;
 }
-*{
-    text-decoration: none;
-}
+
 .table-header{
     width: 100%;
     height: 150px;

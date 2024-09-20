@@ -15,12 +15,13 @@ const Footer = () => {
     return (
         <footer className="footer" >
             <div className="footer-container" >
-                <div className="footer-logo">
+                <div className="footer-logo" >
                     <img src={LGSC} />
                 </div>
                 <div className="footer-logo2">
                     <img src={logo2} alt="" style={{paddingTop:"15%"}}/>
                 </div>
+                <br />
                 <div className="footer-about">
                     <h2>About Us</h2>
                     <p>

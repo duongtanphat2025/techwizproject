@@ -246,7 +246,7 @@ const Search = ({ data = Ambulance }) => {
                             src={image.src}
                             alt={image.alt}
                             onMouseEnter={(e) => handleImageZoom(e, image.src)}
-                            onMouseLeave={handleImageUnzoom}
+                            onMouseLeave={handleImageUnzoom}                           
                           />
 
                           <div id="zoom-lens" style={{ display: "none" }}></div>

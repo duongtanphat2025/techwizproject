@@ -4,6 +4,7 @@ import resultSet from "../data/data.json";
 import React, { useState } from "react";
 import MyNav from "./NavBar";
 import UserLocationMap from "./Location";
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const [state, setState] = useState(resultSet);
@@ -28,8 +29,7 @@ const Home = () => {
 
     return (
         <>
-            <div className="container-fluid bg bg-content" style={{padding: '0%'}}>
-
+            <div className="container-fluid bg bg-content" style={{ padding: '0%' }}>
                 <div>
                     <MyNav />
                 </div>
@@ -38,13 +38,13 @@ const Home = () => {
                         <h1 className="text-center title">Life Link</h1>
                     </div>
                     <div className="buttoncall text-center">
-                        
-                            <button onClick={handleICUCall} style={{ background: "none", border: "none" }}> 
-                                <div id="danger"></div>
-                            </button>
-                        
+
+                        <button onClick={handleICUCall} style={{ background: "none", border: "none" }}>
+                            <div id="danger"></div>
+                        </button>
+
                     </div>
-                    <div align='center'>
+                    <div align='center' style={{ padding: "0% 2% 0% 0%" }}>
                         Your Location
                         <UserLocationMap />
                     </div>
@@ -62,9 +62,19 @@ const Home = () => {
                             partner in health, offering the safest and most timely medical
                             transport solutions.
                         </p>
+                        <div className="sitemap">
+                            <h2>SITE MAP</h2>
+                            <ul>
+                                <li><Link to='/' className='nav-link' >Home</Link></li>
+                                <li><Link to='/search' className='nav-link' >Ambulance Type</Link></li>
+                                <li><Link to='/gallery' className='nav-link' >Gallery</Link></li>
+                                <li><Link to='/about' className='nav-link' >About Us</Link></li>
+                                <li><Link to='/feedback' className='nav-link' >Feedback</Link></li>
+                            </ul>
+                        </div>
                     </div>
-                     <div className="col-lg-6 mt-5">
-                        <table className="table table-hover table-striped" style={{textAlign:"center"}}>
+                    <div className="col-lg-6 mt-5">
+                        <table className="table table-hover table-striped" style={{ textAlign: "center" }}>
                             <thead className="table-dark">
                                 <tr>
                                     <th>Type</th>
@@ -85,7 +95,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-             <div>
+            <div>
                 <Footer />
             </div>
         </>

@@ -1,46 +1,22 @@
-.data{
-    text-align: center;
-}
-input{
-    background-color: aliceblue;
-}
-button{
-    background-color: dimgrey;
-}
-textarea{
-    background-color: aliceblue;
-}
-
-.feedback{
-    width: 80%;
-}
 .user{
-    text-align: right;
-}
-.motnua{
-    clip-path: inset(0 50% 0 0);
+    font-size: 30pt;
 }
 .rating{
-    color: #fff700ec;
     text-shadow: 
     0.2px 0.2px 0px black,  /* viền đen phía dưới bên phải */
     -0.2px -0.2px 0px black, /* viền đen phía trên bên trái */
     0.2px -0.2px 0px black,  /* viền đen phía trên bên phải */
     -0.2px 0.2px 0px black;  /* viền đen phía dưới bên trái */
 }
-.buttonsend{
-    border-radius: 5px;
-    background-color: rgba(239, 106, 17, 0.552);
-    border: thin solid rgba(93, 19, 197, 0.319);
-    padding: 1% 2% 1.5% 2%;
-    color: rgb(142, 88, 21);
-}
+
 .buttonsend:hover{
     border-radius: 5px;
-    background-color: rgba(255, 114, 133, 0.459);
-    border: thin solid rgba(176, 197, 19, 0.433);
-    padding: 1% 2% 1.5% 2%;
+    background-color: chartreuse;
 }
-.textarea{
-    border-radius: 8px;
+.feedback-container { 
+     padding: 5%;
+  }
+.rate{
+    border: 2 solid black;
+   
 }

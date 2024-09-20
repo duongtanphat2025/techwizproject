@@ -4,17 +4,23 @@ table {
 
 .inline {
     display: flex;
-    flex-wrap: wrap; /* Để các khối div tự động xuống hàng nếu màn hình nhỏ */
-    justify-content: space-between; /* Giãn đều các khối div */
-    align-items: flex-start; /* Canh chỉnh các khối div từ phía trên */
-    gap: 20px; /* Khoảng cách giữa các khối div */
+    flex-wrap: wrap;
+    /* Để các khối div tự động xuống hàng nếu màn hình nhỏ */
+    justify-content: space-between;
+    /* Giãn đều các khối div */
+    align-items: flex-start;
+    /* Canh chỉnh các khối div từ phía trên */
+    gap: 20px;
+    /* Khoảng cách giữa các khối div */
 }
 
 .inline div {
-    flex: 1; /* Cho các khối div chiếm khoảng không gian bằng nhau */
+    flex: 1;
+    /* Cho các khối div chiếm khoảng không gian bằng nhau */
     margin: 10px;
 }
-.title{
+
+.title {
     text-align: left;
 }
 
@@ -31,8 +37,8 @@ table {
 .bg {
     background-image: url(../img/bg1.png);
     background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
     background-color: rgb(185, 255, 254);
 }
 
@@ -62,11 +68,13 @@ input {
     margin-top: 30px;
     margin-bottom: 40px;
 }
+
 /* Small screens (mobile phones) */
 @media (max-width: 991px) {
-    .inline{
+    .inline {
         align-items: center;
     }
+
     #danger {
         font-size: 30pt;
     }
@@ -127,7 +135,11 @@ input {
     .table-home {
         font-size: 12px;
     }
-    .location{
+
+    .location {
         font-size: 18px;
     }
+}
+.sitemap{
+    padding-top: 7%;
 }

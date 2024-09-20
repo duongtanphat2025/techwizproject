@@ -54,26 +54,18 @@
     right: 0;
 }
 .imgvan {
-    width: 100%; /* Full width of the container */
+    width: 90%; /* Full width of the container */
     height: auto; /* Maintain aspect ratio */
-    max-width: 300px; /* Optional max width */
+    /* max-width: 300px;  */
+    border-radius: 10%;
 }
 
-@media (max-width: 768px) {
-    .imgvan {
-        max-width: 200px; /* Reduce size for tablets */
-    }
-}
-
-@media (max-width: 480px) {
-    .imgvan {
-        max-width: 150px; /* Further reduce size for mobile devices */
-    }
-}
 
 /* Optional table styling for responsive layout */
 #picture {
-    width: 100%;
+    width: 90%;
+    margin: auto;
+    background-color: azure;
 }
 
 #picture td {
@@ -82,4 +74,5 @@
 }
 .anhphat{
     height: 600px;
+    background-size: cover;
 }
