@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/techwizproject/static/css/main.47837b5f.css",
-    "main.js": "/techwizproject/static/js/main.7e3fd822.js",
+    "main.css": "/techwizproject/static/css/main.c5156ef9.css",
+    "main.js": "/techwizproject/static/js/main.2c686627.js",
     "static/media/vietphap.png": "/techwizproject/static/media/vietphap.85c4afa97cade332dbc0.png",
     "static/media/xethuong7.png": "/techwizproject/static/media/xethuong7.21194c18f5a32d538073.png",
     "static/media/teamSigma.png": "/techwizproject/static/media/teamSigma.425677df2a705f9ce1ec.png",
@@ -48,21 +48,20 @@
     "static/media/nhidong.png": "/techwizproject/static/media/nhidong.0e6bc8dd907d41b65be8.png",
     "static/media/LGSC.png": "/techwizproject/static/media/LGSC.accc5dfa76f83305e1b3.png",
     "static/media/tudu.png": "/techwizproject/static/media/tudu.7a6f80d0f52e52e671b6.png",
+    "static/media/mapvietnam.png": "/techwizproject/static/media/mapvietnam.8c7a8f69d83f6fdb40cf.png",
     "static/media/bachmai.png": "/techwizproject/static/media/bachmai.1d47debb32fb29870c29.png",
     "static/media/quany7a.png": "/techwizproject/static/media/quany7a.0840e6b2f1f5168bafd7.png",
     "static/media/img222.jpg": "/techwizproject/static/media/img222.3b4dc43c4f94a25b0b3a.jpg",
     "static/media/ungbuu.png": "/techwizproject/static/media/ungbuu.21e2ee7e1a884e5eacfd.png",
     "static/media/logo.png": "/techwizproject/static/media/logo.e5949ef0596c2bca22ea.png",
     "static/media/maunen.png": "/techwizproject/static/media/maunen.79fee1633665ca98a344.png",
-    "static/media/1.5_preview_rev_1.png": "/techwizproject/static/media/1.5_preview_rev_1.e9a423e44d67c690b417.png",
-    "static/media/1.1_preview_rev_1.png": "/techwizproject/static/media/1.1_preview_rev_1.20444b85fffc07da3c73.png",
     "index.html": "/techwizproject/index.html",
     "static/media/icon.svg": "/techwizproject/static/media/icon.317bc50c92894bf177b7fef280dcd505.svg",
-    "main.47837b5f.css.map": "/techwizproject/static/css/main.47837b5f.css.map",
-    "main.7e3fd822.js.map": "/techwizproject/static/js/main.7e3fd822.js.map"
+    "main.c5156ef9.css.map": "/techwizproject/static/css/main.c5156ef9.css.map",
+    "main.2c686627.js.map": "/techwizproject/static/js/main.2c686627.js.map"
   },
   "entrypoints": [
-    "static/css/main.47837b5f.css",
-    "static/js/main.7e3fd822.js"
+    "static/css/main.c5156ef9.css",
+    "static/js/main.2c686627.js"
   ]
 }
