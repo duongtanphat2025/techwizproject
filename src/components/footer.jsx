@@ -1,8 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import React from 'react'
 import '../css/Footer.css'
-import logo from '../img/logo.png'
-import LGSC from '../img/lgsc.png'
+import LGSC from '../img/LGSC.png'
 const Footer = () => {
     // Hàm xác nhận cuộc gọi
     const confirmCall = (phoneNumber) => {

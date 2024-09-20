@@ -30,6 +30,7 @@
     display: flex;
     justify-content: center;
     gap: 10px;
+    
 }
 .gallery img{
     width: 10%;    
@@ -46,16 +47,15 @@
     display: flex;
 }
 .buttoncall{
-    padding: 7% 0% 0% 15%;
+    padding: 5% 0% 0% 12%;
 }
 .location{
     padding: 3% 0% 0% 12%;
     width: 40%;
 }
 .thongbao p{
-    color: rgba(45, 19, 114, 0.851);   
+    color: #c7343c;   
 }
 .lgsc{
     width: 200px;
-    
 }

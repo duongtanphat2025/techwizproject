@@ -1,0 +1,34 @@
+
+.backgroundstyle {
+    background-image: url('../img1/maunen.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* position: fixed; Để hình nền cố định khi cuộn */
+    position: relative;  /* Đảm bảo khối div không bị cố định */
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    height: 1400px; 
+    /* opacity: 0.5;  */
+    z-index: -1; /* Đưa hình nền xuống dưới */
+  } 
+  @media (max-width: 768px) {
+    .backgroundstyle {
+        height: 30vh; /* Thay đổi chiều cao cho thiết bị có kích thước màn hình nhỏ */
+    }
+}
+
+@media (max-width: 480px) {
+    .backgroundstyle {
+        height: 20vh; /* Điều chỉnh cho điện thoại di động */
+    }
+}
+.in{
+  display: flex;
+  flex-wrap: wrap;
+}
+.cantrai{
+  margin-left: 140px;
+  margin-top: 20px;
+}

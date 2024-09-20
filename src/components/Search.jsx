@@ -5,14 +5,7 @@ import '../css/Home.css'
 import '../css/Search.css'
 import Footer from "./footer";
 import Dropdown from "react-bootstrap/Dropdown";
-/**
- *  - The data to be filtered and sorted. The data should
- *   be an array of objects with the following properties:
- *   - type (string): The type of the service
- *   - price (number): The price of the service
- *   - distance (string): The distance of the service
- *  The rendered list of services
- */
+
 const Search = ({ data = Ambulance }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [mainSortBy, setMainSortBy] = useState("type");
@@ -73,11 +66,13 @@ const Search = ({ data = Ambulance }) => {
   };
   return (
     <>
+      < MyNav />
       <div className="bg bg-content">
-        < MyNav />
         <div align='center'>
           <div align='center' className="style">
-            <h1 className="title"> Ambulance Type </h1>
+          <br />
+          <h2 align='center' style={{ fontSize: "80px" }}>Ambulance Type</h2>
+            
           </div>
           <div>
             <input
@@ -117,13 +112,13 @@ const Search = ({ data = Ambulance }) => {
           <table>
             <tr>
               <th>Type</th>
-              <th>Price</th>         
+              <th>Price</th>
               <th>Location</th>
             </tr>
             {sortedData.map((service, index) => (
               <tr key={index} className="table-list">
                 <td>{service.type}</td>
-                <td>{`${service.price}$`}</td>         
+                <td>{`${service.price}$`}</td>
                 <td>District {service.location}</td>
 
               </tr>

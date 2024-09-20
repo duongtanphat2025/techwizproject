@@ -1,8 +1,7 @@
 import React from "react";
 import "../css/backgroundstyle.css";
 import Footer from "./footer.jsx";
-import Slide from "./Carousel.jsx"
-//import synthesis from '../components/Synthesis.jsx'; //import mảng hình
+import Slide from "../components/Carousel.jsx"
 import h1 from '../img1/ac.png';
 import h2 from '../img1/ac1.png';
 import h3 from '../img1/ac2.png';
@@ -24,63 +23,46 @@ const Gallery = () => {
             <div>
                 <MyNav />
             </div>
-            <br />
-            <div align="center">
-                <Slide />
+            <div className="bg" align="center">
+                <br />
+                <h2 align='center' style={{ fontSize: "80px" }}>Carousel</h2>
+                <div >
+                    <Slide />
+                </div>
             </div>
-           
             <div className="backgroundstyle">
                 <h1 align='center'>Our Services</h1>
-                <div className="in">
-                    <div className="cantrai">
-                        <img src={h1} width={300} height={270} />
-                    </div>
-                    <div className="cantrai">
-                        <img src={h2} width={300} height={270} />
-
-                    </div>
-                    <div className="cantrai">
-                        <img src={h3} width={300} height={270} />
-                    </div>
-                </div>
-                <div className="in">
-                    <div className="cantrai">
-                        <img src={h4} width={300} height={270} />
-                    </div>
-                    <div className="cantrai">
-                        <img src={h5} width={300} height={270} />
-
-                    </div>
-                    <div className="cantrai">
-                        <img src={h6} width={300} height={270} />
-                    </div>
-                </div>
-                <div className="in">
-                    <div className="cantrai">
-                        <img src={h7} width={300} height={270} />
-                    </div>
-                    <div className="cantrai">
-                        <img src={h8} width={300} height={270} />
-
-                    </div>
-                    <div className="cantrai">
-                        <img src={h9} width={300} height={270} />
-                    </div>
-                </div>
-                <div className="in">
-                    <div className="cantrai">
-                        <img src={h10} width={300} height={270} />
-                    </div>
-                    <div className="cantrai">
-                        <img src={h11} width={300} height={270} />
-
-                    </div>
-                    <div className="cantrai">
-                        <img src={h12} width={300} height={270} />
+                <table id="picture">
+                    <tr>
+                        <td><img src={h1} className="imgvan" /></td>
+                        <td><img src={h2} className="imgvan" /></td>
+                        <td><img src={h3} className="imgvan" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src={h4} className="imgvan" /></td>
+                        <td><img src={h5} className="imgvan" /></td>
+                        <td><img src={h6} className="imgvan" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src={h7} className="imgvan" /></td>
+                        <td><img src={h8} className="imgvan" /></td>
+                        <td><img src={h9} className="imgvan" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src={h10} className="imgvan" /></td>
+                        <td><img src={h11} className="imgvan" /></td>
+                        <td><img src={h12} className="imgvan" /></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <div class="box-hover">
+                    <img src={newsearch} alt="atention" width={400} />
+                    <div href={h2} class="nut1" target="_top">
+                        Images are taken from sources on the internet.
                     </div>
                 </div>
             </div>
-
             <div>
                 <Footer />
             </div>

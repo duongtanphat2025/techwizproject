@@ -3,6 +3,7 @@
     flex: 1;
 }
 
+
 caption {
     display: block;
 }
@@ -31,7 +32,7 @@ h1 {
 }
 
 iframe,
-img {
+#team {
     max-width: 100%;
     height: auto;
     display: block;
@@ -54,9 +55,10 @@ img {
         font-size: 13pt;
     }
 
-    iframe,
-    #team {
-        width: 50%;
+    iframe, img {
+        max-width: 100%;
+        height: auto;
+        display: block
     }
 }
 

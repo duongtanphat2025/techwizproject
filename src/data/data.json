@@ -8,7 +8,7 @@
     },
     {
       "id": "2",
-      "type": "ICU",
+      "type": "ICCU",
       "price": "900",
       "location": "2",
       "distance": "4"
@@ -22,14 +22,14 @@
     },
     {
       "id": "4",
-      "type": "ICCU",
+      "type": "ICU",
       "price": "900",
       "location": "4",
-      "distance": "9"
+      "distance": "3"
     },
     {
       "id": "5",
-      "type": "A/c",
+      "type": "A/C",
       "price": "700",
       "location": "5",
       "distance": "3"
@@ -67,7 +67,7 @@
       "type": "Non A/C",
       "price": "400",
       "location": "5",
-      "distance": "6"
+      "distance": "3"
     }
   ]
   
