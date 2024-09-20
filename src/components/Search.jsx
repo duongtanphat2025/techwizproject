@@ -215,7 +215,6 @@ const Search = ({ data = Ambulance }) => {
               className="search"
             />
           </div>
-          <br />
         </div>
         <div
           className="option"
@@ -260,8 +259,8 @@ const Search = ({ data = Ambulance }) => {
             Click To Book
           </button>
         </div>
-        <br />
-        <div>
+
+        <div align='left'>
           <div className="listView">
             <table className="table-list">
               <tr>
