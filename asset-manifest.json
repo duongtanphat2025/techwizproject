@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/techwizproject/static/css/main.c5156ef9.css",
-    "main.js": "/techwizproject/static/js/main.2c686627.js",
-    "static/media/vietphap.png": "/techwizproject/static/media/vietphap.85c4afa97cade332dbc0.png",
+    "main.css": "/techwizproject/static/css/main.879c599d.css",
+    "main.js": "/techwizproject/static/js/main.35937235.js",
     "static/media/xethuong7.png": "/techwizproject/static/media/xethuong7.21194c18f5a32d538073.png",
     "static/media/teamSigma.png": "/techwizproject/static/media/teamSigma.425677df2a705f9ce1ec.png",
     "static/media/xethuong2.png": "/techwizproject/static/media/xethuong2.e066e079c685ef9f1195.png",
@@ -39,12 +38,12 @@
     "static/media/xethuong12.png": "/techwizproject/static/media/xethuong12.1e91d22b42edd66c6b04.png",
     "static/media/img8.png": "/techwizproject/static/media/img8.857c15e9cdaf271bf176.png",
     "static/media/xethuong11.png": "/techwizproject/static/media/xethuong11.69086dca9dbf567d7c76.png",
-    "static/media/bg1.png": "/techwizproject/static/media/bg1.ebb2465025e856a2e259.png",
     "static/media/xethuong4.png": "/techwizproject/static/media/xethuong4.46eb89771ce21ef4a6af.png",
     "static/media/xethuong19.png": "/techwizproject/static/media/xethuong19.0ef67a586cf750dd04f1.png",
     "static/media/newsearch.png": "/techwizproject/static/media/newsearch.9d9c8919362eaa3e824f.png",
     "static/media/img9.png": "/techwizproject/static/media/img9.fb70b78215b770a04b29.png",
     "static/media/vinmec.png": "/techwizproject/static/media/vinmec.b1ba9b02565015350262.png",
+    "static/media/vietphap.png": "/techwizproject/static/media/vietphap.04934f211aa649be9ac4.png",
     "static/media/nhidong.png": "/techwizproject/static/media/nhidong.0e6bc8dd907d41b65be8.png",
     "static/media/LGSC.png": "/techwizproject/static/media/LGSC.accc5dfa76f83305e1b3.png",
     "static/media/tudu.png": "/techwizproject/static/media/tudu.7a6f80d0f52e52e671b6.png",
@@ -57,11 +56,11 @@
     "static/media/maunen.png": "/techwizproject/static/media/maunen.79fee1633665ca98a344.png",
     "index.html": "/techwizproject/index.html",
     "static/media/icon.svg": "/techwizproject/static/media/icon.317bc50c92894bf177b7fef280dcd505.svg",
-    "main.c5156ef9.css.map": "/techwizproject/static/css/main.c5156ef9.css.map",
-    "main.2c686627.js.map": "/techwizproject/static/js/main.2c686627.js.map"
+    "main.879c599d.css.map": "/techwizproject/static/css/main.879c599d.css.map",
+    "main.35937235.js.map": "/techwizproject/static/js/main.35937235.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5156ef9.css",
-    "static/js/main.2c686627.js"
+    "static/css/main.879c599d.css",
+    "static/js/main.35937235.js"
   ]
 }
